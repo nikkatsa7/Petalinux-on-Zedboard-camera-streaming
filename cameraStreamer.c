@@ -84,9 +84,9 @@ int main(void)
 			t = clock();
 			//Read the image from the slv_reg1,slv_reg2,slv_reg3
 			for(i = 0; i < 230400 ; i=i+3){
-				pic[i] = *((unsigned *)(ptr_camera+page_offset_camera+4));	
-				pic[i+1] = *((unsigned *)(ptr_camera+page_offset_camera+8));	
-				pic[i+2] = *((unsigned *)(ptr_camera+page_offset_camera+12));	
+				pic[i] = htonl(*((unsigned *)(ptr_camera+page_offset_camera+4)));	
+				pic[i+1] = htonl(*((unsigned *)(ptr_camera+page_offset_camera+8)));	
+				pic[i+2] = htonl(*((unsigned *)(ptr_camera+page_offset_camera+12)));	
 			}
 			t = clock() - t;
 			//Send the 24-bit image through the socket
