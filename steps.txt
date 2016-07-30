@@ -1,0 +1,25 @@
+Bhmata tou project
+
+1) Katalabame pws doyleuei h ov7670
+2) Allaksame to top module se verilog kai enswmatosame thn leitoyrgia poy pagwnei thn eikona
+3) Dhmioyrghsame ena IP me to project ayto kai testarame thn leitoyrgia toy se vga
+4) Grapsame diko mas software poy epikoinwnei mesw axi kai gia na stelnontai apo auto oi entoles gia pagwma ths eikonas
+5) mathame pws leitoyrgoyn ta petalinux kai pws ftiaxnoyme dika mas apps gia na ta trexoume ekei
+6) Melethsame ta specs poy xreiazetai ena Zynq ps gia na einai bootable ta petalinux se ayta
+7) Parapanw prosoxh xreiasthke sta components prokeimenoy na leitoyrgoyn (ta mio den einai prosbashma sto PL dioti einai desmeymena sto apo to PS)
+8) Dhmiourghsame diko mas hardware kai vrikame thn diadikasia pws na to enswmatonoyme to systhma poy trexei petalinux
+9) Mathame pws ginetai h antistoixhsh ths psysical address twn peripheriakwn prokeimenoy na ta kanoyme access apo thn efarmogh mas sta petalinux
+10) Melethsame ta socket kai tis leitoygries toys
+11) Grapsame se C enan server kai ena client kai mathame pws na metaferoyme dedomane(char array) me epityxia apo ton ena ston allo
+12) Prokeimenoy na elegksoyme thn eikona poy kanei capture h FPGA vrhkame enan tropo dhmioyrgias eyxrwmoy arxeioy eikonas-ppm format
+13) Steilame me epityxia mia eikona se ppm format apo ton server ston client me ton client na thn anakataskeyasei
+14) Grapsame enan server o opoios trexei sthn FPGA, kanei capture mia statikh eikona kai thn stelnei ston client o opoios dhmioyrgei to arxeio eikonas 
+15) Prokeimenou na dhmioygrhsoyme to stream grapsame enan client se Python o opoios se kathe nea eikona ananewnei to parathyro ths eikonas xrhsimopoiwntas kapoies grafikes vivliiothikes
+		phgame se python dioti h diadikasia ayth se C einai arketa poliploki sto na vrethoyn oi vivliothikes oi opoies na kanoyn ayto akribws poy thelame. Thn dhmioyrgia dld enws updatable parathyroy eikonas
+16) Ftiaksame mia epikoinwnia typoy handshake metaksi server kai client prokeimenoy o server na pagwnei thn camera, na grafei kai na stelnei thn caprured image MONO otan o client exei 
+		teleiwsei me thn ananewsh toy parathyroy eikonas. H diadikasia ayth ginetai pleon me epanalhptiko tropo.
+17) To gegonos oti h camera kanbei caprure 8-bit format enw to parathyro eikonas exei 24-bit, dhmioygoyse bottleneck ston client kata thn metatropi ayth. Gia ton logo ayto 
+		allaksame to hardware wste sthn eksodo toy na stelnei pleon t0 24-bit format ths eikonas. 
+18) Parathrhsame oti otan stelnoyme 4 bytes thn fora apo ton server dhmioyrgeitai problhma me to alignment twn paketwn me apotelesma otan se 24-bit format stelname ta R G B R 
+		o client dexotan R B G R. Ayto to lysame me thn diapistwsh oti to network einai big endian enw o arm einai little. Etsi me thn xrhsh ths entolhs htonl ta paketa poy stelname pleon
+		htan symfwna me thn leitoyrgia toy network.
